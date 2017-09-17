@@ -35,10 +35,10 @@ TODO: Add Screenshot
 
 cgdisk /dev/sda
 
-	    /dev/sda1       		EFI		                 ef00
-	    /dev/sda2       		swap	                8200
-	    /dev/sda3	       	filesystem	          8300
-    /dev/sda4       filesystem          8300
+		/dev/sda1		EFI		ef00
+		/dev/sda2		swap		8200
+		/dev/sda3		filesystem	8300
+		/dev/sda4		filesystem	8300
 ``` 
 
 ## Step 3 - Formatting
@@ -55,7 +55,7 @@ $ mkfs.ext4 /dev/sda4
 ```sh
 $ mkfs.fat -F32	/dev/sda1
 $ mkswap /dev/sda2
-$ swapon /dev.sda2
+$ swapon /dev/sda2
 $ mkfs.ext4 /dev/sda3
 $ mkfs.ext4 /dev/sda4
 ```
@@ -198,7 +198,7 @@ $ reboot
 Arch Machine Setup is Done !
 Let's take a coffee break
 
-=== After Installing Arch ===
+# After Installing Arch
 ## Step 1 - zsh
 ```sh
 $ pacman -S zsh
